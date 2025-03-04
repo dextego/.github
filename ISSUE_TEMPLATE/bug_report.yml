@@ -1,0 +1,99 @@
+name: 🐛 Bug Report
+description: Report something that's not working as expected
+title: "[BUG]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔍 Bug Report
+        Thanks for taking the time to fill out this bug report!
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 💥 Impact Level
+      description: How severe is this bug?
+      options:
+        - 🔥 Blocker - Production is down / unusable
+        - 🚨 Critical - Major feature broken, no workaround
+        - 🚧 Major - Feature impaired but partial workaround exists
+        - 🔔 Minor - Inconvenient but not blocking work
+        - 💅 Trivial - Visual/small issues, low priority
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 Bug Description
+      description: What happened and what should have happened instead?
+      placeholder: Describe the issue as clearly as possible
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Clear steps to consistently reproduce the issue
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Observe error
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: 🌐 Environment
+      description: Where is this happening? (production/staging/dev/local)
+      placeholder: "production"
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-context
+    attributes:
+      label: 💻 Technical Details
+      description: Error messages, console logs, etc.
+      render: shell
+    validations:
+      required: false
+
+  - type: dropdown
+    id: sprint-impact
+    attributes:
+      label: 📊 Sprint Impact
+      description: How does this affect our current sprint?
+      options:
+        - Blocks sprint goal(s)
+        - Affects committed stories
+        - Can be addressed in future sprint
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: 💡 Possible Solution
+      description: If you have ideas on how to fix this
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Paste or drag images here
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        👨‍💻 For assistance with this template, contact @ramanaditya
