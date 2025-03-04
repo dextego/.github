@@ -1,0 +1,71 @@
+name: Sprint Retrospective
+description: Document sprint retrospective outcomes
+title: "[RETRO]: Sprint # Retrospective"
+labels: ["retrospective"]
+assignees: []  # Team visibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Sprint Retrospective
+        Reflect on what went well, what could improve, and action items
+  - type: input
+    id: sprint-reference
+    attributes:
+      label: Sprint Reference
+      description: Link to the sprint issue
+      placeholder: "#150"
+    validations:
+      required: true
+  - type: textarea
+    id: metrics-summary
+    attributes:
+      label: Sprint Metrics
+      description: Key metrics and completion status
+      placeholder: |
+        - Planned velocity: 40 points
+        - Completed: 35 points (87.5%)
+        - 8/10 stories completed
+        - 2 production bugs reported
+    validations:
+      required: true
+  - type: textarea
+    id: went-well
+    attributes:
+      label: What Went Well
+      description: Positive aspects to continue
+      placeholder: |
+        - New CI pipeline reduced build times by 40%
+        - Daily standups were focused and efficient
+        - Team collaboration on complex feature X
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Areas for Improvement
+      description: Challenges faced and improvement opportunities
+      placeholder: |
+        - Underestimated complexity of feature Y
+        - External dependencies blocked progress
+        - Testing took longer than expected
+    validations:
+      required: true
+  - type: textarea
+    id: action-items
+    attributes:
+      label: Action Items
+      description: Specific, assigned improvements for next sprint
+      placeholder: |
+        - [ ] @dev1 - Break down complex stories earlier in planning
+        - [ ] @dev2 - Document common testing scenarios
+        - [ ] @pm - Schedule regular sync with dependent team
+    validations:
+      required: true
+  - type: textarea
+    id: kudos
+    attributes:
+      label: Kudos and Recognition
+      description: Celebrate team and individual achievements
+    validations:
+      required: false

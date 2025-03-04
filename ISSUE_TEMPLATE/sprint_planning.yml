@@ -1,0 +1,87 @@
+name: Sprint Planning
+description: Set up a new sprint with goals and metrics
+title: "[SPRINT]: Sprint # - YYYY-MM-DD to YYYY-MM-DD"
+labels: ["sprint", "planning"]
+assignees: []  # Will be visible to whole team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Sprint Planning
+        Define sprint goals, scope, and success metrics
+  - type: input
+    id: sprint-number
+    attributes:
+      label: Sprint Number
+      description: Sequential sprint number
+      placeholder: "Sprint 24"
+    validations:
+      required: true
+  - type: input
+    id: duration
+    attributes:
+      label: Sprint Duration
+      description: Start and end dates
+      placeholder: "Mar 10 - Mar 24, 2025"
+    validations:
+      required: true
+  - type: textarea
+    id: sprint-goals
+    attributes:
+      label: Sprint Goals
+      description: 1-3 clear objectives for this sprint
+      placeholder: |
+        1. Complete user authentication flow
+        2. Improve API response time by 20%
+        3. Release v1.2 to staging
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Sprint Scope
+      description: User stories committed for this sprint
+      placeholder: |
+        - #123 User Login
+        - #124 Password Reset
+        - #125 API Optimization
+    validations:
+      required: true
+  - type: input
+    id: capacity
+    attributes:
+      label: Team Capacity (story points)
+      description: Total team capacity for this sprint
+      placeholder: "40 points"
+    validations:
+      required: true
+  - type: input
+    id: velocity
+    attributes:
+      label: Previous Velocity
+      description: Completed points from last sprint
+      placeholder: "35 points"
+    validations:
+      required: false
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Assumptions
+      description: Known risks that might impact sprint delivery
+      placeholder: |
+        - New team member onboarding
+        - External dependency on API changes
+        - Upcoming holidays may reduce capacity
+    validations:
+      required: true
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will we measure success for this sprint?
+      placeholder: |
+        - All committed stories done
+        - No regression bugs
+        - 95% test coverage maintained
+    validations:
+      required: true
