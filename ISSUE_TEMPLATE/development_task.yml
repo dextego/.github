@@ -2,7 +2,7 @@ name: Development Task
 description: Technical implementation task or subtask
 title: "[TASK]: "
 labels: ["task"]
-assignees: []  # Will be assigned during planning/standup
+assignees: []
 body:
   - type: markdown
     attributes:

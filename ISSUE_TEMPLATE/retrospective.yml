@@ -2,7 +2,7 @@ name: Sprint Retrospective
 description: Document sprint retrospective outcomes
 title: "[RETRO]: Sprint # Retrospective"
 labels: ["retrospective"]
-assignees: []  # Team visibility
+assignees: []
 body:
   - type: markdown
     attributes:

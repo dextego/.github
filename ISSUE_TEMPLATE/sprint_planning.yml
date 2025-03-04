@@ -2,7 +2,7 @@ name: Sprint Planning
 description: Set up a new sprint with goals and metrics
 title: "[SPRINT]: Sprint # - YYYY-MM-DD to YYYY-MM-DD"
 labels: ["sprint", "planning"]
-assignees: []  # Will be visible to whole team
+assignees: []
 body:
   - type: markdown
     attributes:

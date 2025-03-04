@@ -2,7 +2,7 @@ name: User Story
 description: Create a new user story or feature request
 title: "[STORY]: As a [user type], I want to [action] so that [benefit]"
 labels: ["story", "backlog"]
-assignees: []  # Will be assigned during sprint planning
+assignees: []
 body:
   - type: markdown
     attributes:
