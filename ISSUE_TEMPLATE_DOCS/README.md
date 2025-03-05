@@ -53,10 +53,10 @@ These templates are stored in the organization-wide `.github` repository in:
 │   ├── sprint_planning.yml
 │   ├── retrospective.yml
 │   └── config.yml
-├── ISSUE_TEMPLATE_DOCS/        <- This README is here
+├── ISSUE_TEMPLATE_DOCS/
 │   └── README.md
 └── profile/
-    └── README.md               <- Your existing org profile README
+    └── README.md
 ```
 
 ## Estimation Guidelines
