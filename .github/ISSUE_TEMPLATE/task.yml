@@ -1,0 +1,112 @@
+name: 🛠️ Development Task
+description: Technical implementation task or subtask
+title: "[TASK]: "
+labels: ["task"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🛠️ Development Task
+        Technical implementation details for developers.
+
+  - type: input
+    id: parent-story
+    attributes:
+      label: 🔗 Parent Story/Issue
+      description: Link to the parent user story
+      placeholder: "#123"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: 🧰 Task Type
+      description: Classification of work
+      options:
+        - 🧩 Feature Implementation
+        - 🐛 Bug Fix
+        - 🧹 Refactoring
+        - ⚡ Performance Improvement
+        - 💸 Technical Debt
+        - 🧪 Testing
+        - 🚀 DevOps/Infrastructure
+        - 📚 Documentation
+    validations:
+      required: false
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: ✏️ Implementation Details
+      description: Technical description of what needs to be done
+      placeholder: |
+        - Technical step 1
+        - Technical step 2
+        - Technical step 3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: ⏱️ Effort Estimate
+      description: How much effort will this task take?
+      options:
+        - ☕ 1h (Very quick task)
+        - ☕☕ 2h (Small task)
+        - 🥪 4h (Half-day task)
+        - 🌞 1d (8h - Full day task)
+        - 🌞🌞 2d (16h - Maximum single task)
+        - ⚠️ 3d+ (Needs breakdown)
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: 💭 Technical Notes
+      description: Architecture considerations, patterns to use, pitfalls to avoid
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: ⛓️ Dependencies
+      description: Other tasks that must be completed first
+      placeholder: |
+        - Dependency 1: #
+        - Dependency 2: #
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-done
+    attributes:
+      label: 📝 Definition of Done
+      description: Required items for task completion
+      options:
+        - label: Code follows team standards and patterns
+        - label: Unit tests implemented
+        - label: Code reviewed by at least one team member
+        - label: Documentation updated (if needed)
+        - label: Changes tested in development environment
+    validations:
+      required: false
+
+  - type: input
+    id: sprint
+    attributes:
+      label: 📅 Sprint
+      description: Current sprint
+      placeholder: "25-Q1 JFM - 1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        👨‍💻 For assistance with this template, contact @ramanaditya

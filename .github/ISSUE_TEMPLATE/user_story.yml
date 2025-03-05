@@ -1,0 +1,122 @@
+name: ✨ User Story
+description: Create a new user story or feature request
+title: "[STORY]: As a [user], I want to [action] so that [benefit]"
+labels: ["story", "backlog"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ User Story
+        Define a new feature from both business and technical perspectives.
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: 🚀 Business Value
+      description: Why does this matter? What problem does it solve? What metrics will it improve?
+      placeholder: This feature will increase conversion by addressing user feedback about...
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: 🏆 Success Metrics
+      description: How will we measure the success of this feature?
+      placeholder: |
+        - Metric 1: e.g., Increase conversion by 5%
+        - Metric 2: e.g., Reduce support tickets by 20%
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🧩 Priority
+      description: How important is this feature?
+      options:
+        - 🔴 Critical - Must have for release (blocking)
+        - 🟠 High - Important for release (high impact)
+        - 🟡 Medium - Nice to have (good improvement)
+        - 🟢 Low - Future consideration (can wait)
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: Clear, testable conditions that define "done"
+      placeholder: |
+        - User can [specific action]
+        - System displays [expected result]
+        - Error states handled appropriately
+    validations:
+      required: false
+
+  - type: dropdown
+    id: t-shirt-size
+    attributes:
+      label: 📏 T-shirt Size Estimate
+      description: Initial effort estimation
+      options:
+        - 👕 XS (< 1 day)
+        - 👕 S (1-2 days)
+        - 👕 M (3-5 days)
+        - 👕 L (1-2 weeks) - Consider breaking down
+        - 👕 XL (2+ weeks) - Must break down
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-approach
+    attributes:
+      label: 👨‍💻 Technical Approach
+      description: High-level implementation details
+      placeholder: |
+        - Key components to modify
+        - Potential challenges
+        - Architecture considerations
+    validations:
+      required: false
+
+  - type: textarea
+    id: ui-ux
+    attributes:
+      label: 🎨 UI/UX Considerations
+      description: Design notes, mockups, wireframe links
+    validations:
+      required: false
+
+  - type: input
+    id: epic-link
+    attributes:
+      label: 🔗 Epic Link
+      description: Parent epic or project milestone
+      placeholder: "#123"
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing-notes
+    attributes:
+      label: 🧪 Testing Notes
+      description: Special testing considerations
+    validations:
+      required: false
+
+  - type: input
+    id: sprint
+    attributes:
+      label: 📅 Target Sprint
+      description: Target sprint for implementation
+      placeholder: "25-Q1 JFM - 1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        👨‍💻 For assistance with this template, contact @ramanaditya

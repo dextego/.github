@@ -1,0 +1,138 @@
+name: 🔄 Sprint Retrospective
+description: Document sprint retrospective outcomes
+title: "[RETRO]: 25-Q1 JFM - 1 Retrospective"
+labels: ["retrospective"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔄 Sprint Retrospective
+        Reflect on what went well, what could improve, and action items.
+
+  - type: input
+    id: sprint-name
+    attributes:
+      label: 🗓️ Sprint Name
+      description: Name of the completed sprint
+      placeholder: "25-Q1 JFM - 1"
+    validations:
+      required: false
+
+  - type: input
+    id: planning-issue
+    attributes:
+      label: 🔗 Planning Issue
+      description: Link to the sprint planning issue
+      placeholder: "#150"
+    validations:
+      required: false
+
+  - type: textarea
+    id: metrics-summary
+    attributes:
+      label: 📊 Sprint Metrics
+      description: Key metrics and completion status
+      placeholder: |
+        - **Planned Points:** 42 points
+        - **Completed Points:** 38 points (90%)
+        - **Stories Completed:** 7/8 stories
+        - **Bugs Reported:** 3 (1 critical, 2 minor)
+        - **Deployment Status:** Released to production on Mar 24
+    validations:
+      required: false
+
+  - type: textarea
+    id: goals-review
+    attributes:
+      label: 🎯 Sprint Goals Review
+      description: Review of sprint goals from planning
+      placeholder: |
+        - Goal 1: ✅/⚠️/❌ Status and brief note
+        - Goal 2: ✅/⚠️/❌ Status and brief note
+        - Goal 3: ✅/⚠️/❌ Status and brief note
+    validations:
+      required: false
+
+  - type: textarea
+    id: went-well
+    attributes:
+      label: 🌟 What Went Well
+      description: Positive aspects to continue
+      placeholder: |
+        - ✅ The team collaborated effectively on complex feature X
+        - ✅ New CI pipeline reduced build times by 40%
+        - ✅ Daily standups were focused and efficient
+    validations:
+      required: false
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: 🔧 Areas for Improvement
+      description: Challenges faced and improvement opportunities
+      placeholder: |
+        - ⚠️ Underestimated complexity of feature Y
+        - ⚠️ External dependencies blocked progress
+        - ⚠️ Testing took longer than expected
+    validations:
+      required: false
+
+  - type: textarea
+    id: action-items
+    attributes:
+      label: 🚀 Action Items
+      description: Specific, assigned improvements for next sprint
+      placeholder: |
+        - [ ] @member1 - Action item
+        - [ ] @member2 - Action item
+        - [ ] @member3 - Action item
+    validations:
+      required: false
+
+  - type: textarea
+    id: process-improvements
+    attributes:
+      label: 💡 Process Improvements
+      description: Suggestions for workflow, tools, or process improvements
+    validations:
+      required: false
+
+  - type: textarea
+    id: kudos
+    attributes:
+      label: 🏆 Kudos and Recognition
+      description: Celebrate team and individual achievements
+      placeholder: |
+        - 👏 @member1 for going above and beyond on feature X
+        - 👏 @member2 for mentoring new team members
+        - 👏 @member3 for solving a critical production issue
+    validations:
+      required: false
+
+  - type: textarea
+    id: velocity-trend
+    attributes:
+      label: 📈 Velocity Trend
+      description: Track velocity trends
+      placeholder: |
+        - Sprint n-2: 35 points
+        - Sprint n-1: 38 points
+        - Current Sprint: 42 points
+        - Trend: Increasing/Stable/Decreasing
+    validations:
+      required: false
+
+  - type: textarea
+    id: next-sprint
+    attributes:
+      label: 🗓️ Next Sprint Preview
+      description: Brief look ahead at priorities for next sprint
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        👨‍💻 For assistance with this template, contact @ramanaditya
