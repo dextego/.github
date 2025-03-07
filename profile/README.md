@@ -1,4 +1,4 @@
-# Dextego AI: Empowering Professional Excellence
+# Dextego AI:
 
 Welcome to the official GitHub repository for Dextego AI. Dextego empowers sales teams navigating intricate B2B sales cycles where trust is paramount. Our AI sales coaching platform transforms consultative sellers into trusted advisors by honing crucial human skills and buyer-specific communication.
 
